@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="">
+            <h1 th:text="${name}" class="name">SEU NOME</h1>
+        </div>
+
+        <div class="container__infos">
+            <div class="image__wrapper">
+                <img src="assets/profile.png" alt="">
+            </div>
+            <div class="infos__wrapper glass">
+                <p th:text="${email}" class="infos__text">Email: posdfkpasdofpds</p>
+                <p th:text="${telefone}" class="infos__text">Telefone: pdofkpsdoaf</p>
+                <p th:text="${nascimento}" class="infos__text">Data de nascimento: adspofkdasopf</p>
+                <a href="" th:text="${linkedin}" class="infos__text">LinkedIn: pasodfksadopf</a>
+                <a href="" th:text="${github}" class="infos__text">Github: spofkaspodfpodasf</a>
+            </div>
+        </div>
+
+        <div class="container_exp">
+            <div class="works__container glass">
+                <h1 class="title">Experiencia profissional</h1>
+                <div class="works__wrapper">
+                    <div class="work">
+                        <strong th:text="${experiencia}">Teste</strong>
+                        <p th:text="${cargo}">Cargo</p>
+                        <span th:text="${periodo}">Periodo: Desde 2012</span>
+                    </div>
+                    <div class="work">
+                        <strong th:text="${experiencia}">Teste</strong>
+                        <p th:text="${cargo}">Cargo</p>
+                        <span th:text="${periodo}">Periodo: Desde 2012</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="study__container glass">
+                <h1 class="title">Formação academica</h1>
+                <div class="studies__wrapper">
+                    <div class="study">
+                        <strong th:text="${curso}">Mestrado em ciencia</strong>
+                        <p th:text="${unidade}">Curso</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<div class="others__container">
+
+    <div class="others glass">
+        <p th:text="${sobre}"></p>
+    </div>
+</div>
+        
+    </main>
+</body>
+
+</html>
