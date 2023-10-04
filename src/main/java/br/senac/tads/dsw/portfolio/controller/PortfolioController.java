@@ -9,17 +9,18 @@ public class PortfolioController {
     @GetMapping("/")
     public ModelAndView exemploViewObj() {
         ModelAndView mv = new ModelAndView("home");
-        mv.addObject("name", "Gustavo Pantaleãodesk");
-        mv.addObject("email", "Email: gustavo@gmail.com");
-        mv.addObject("telefone", "Telefone: gustavo@gmail.com");
-        mv.addObject("nascimento", "Data de nascimento: gustavo@gmail.com");
-        mv.addObject("linkedin", "LinkedIn");
-        mv.addObject("github", "Github: gustavo@gmail.com");
-        mv.addObject("experiencia", "OSF Digital");
+        mv.addObject("name", "Marcos Souza Dos Santos");
+        mv.addObject("email", "farmarcos@hotmail.com");
+        mv.addObject("telefone", "(11) 96044-3531");
+        mv.addObject("nascimento", "13/02/1986");
+        mv.addObject("linkedin", "https://www.linkedin.com/in/marcos-souza-540b9b64/");
+
+        mv.addObject("github", "Github:https:https://github.com/Marcosgael/PaginaSimples ");
+        mv.addObject("experiencia", "Autônomo");
         mv.addObject("cargo", "Front-end developer");
         mv.addObject("periodo", "Periodo: desde 2022");
-        mv.addObject("curso", "Analise");
-        mv.addObject("unidade", "Senac");
+        mv.addObject("curso", "Analise  Desenvolivimento de Sistemas");
+        mv.addObject("unidade", "Senac - Santo Amaro");
         mv.addObject("sobre",
                 "Sou um desenvolvedor apaixonado pela arte da programação e pela criação de soluções tecnológicas\r\n" + //
                         "            inovadoras. Com um forte compromisso com a excelência técnica e uma sede contínua de aprendizado, estou\r\n"

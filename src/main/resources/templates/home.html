@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>PERFIL</title>
 </head>
 
 <body>
@@ -13,17 +13,18 @@
         <div class="">
             <h1 th:text="${name}" class="name">SEU NOME</h1>
         </div>
-
+       <img></img>
         <div class="container__infos">
             <div class="image__wrapper">
-                <img src="assets/profile.png" alt="">
+                <img src="assets/profile.jpeg" alt="">
             </div>
             <div class="infos__wrapper glass">
-                <p th:text="${email}" class="infos__text">Email: posdfkpasdofpds</p>
-                <p th:text="${telefone}" class="infos__text">Telefone: pdofkpsdoaf</p>
-                <p th:text="${nascimento}" class="infos__text">Data de nascimento: adspofkdasopf</p>
-                <a href="" th:text="${linkedin}" class="infos__text">LinkedIn: pasodfksadopf</a>
-                <a href="" th:text="${github}" class="infos__text">Github: spofkaspodfpodasf</a>
+                <p class="infos__text">E-mail: <span th:text="${email}"></span> </p>
+                <p class="infos__text">Telefone: <span th:text="${telefone}"></span> </p>
+                <p  class="infos__text">Data de nascimento: <span th:text="${nascimento}"></span></p>
+                <a th:href="${linkedin}" class="infos__text" target="_blank">LinkedIn: <span th:text="${linkedin}"></span></a>
+
+                <a href="" th:text="${github}" class="infos__text">Github: </a>
             </div>
         </div>
 
